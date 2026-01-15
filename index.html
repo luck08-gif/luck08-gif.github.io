@@ -2,122 +2,78 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Luck08 Gaming</title>
+    <title>My Gaming World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
         body {
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #020617;
-            color: white;
-        }
-
-        /* ===== HEADER ===== */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 10;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(6px);
-        }
-
-        header h1 {
-            color: #00ffff;
-        }
-
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #00ffff;
-        }
-
-        /* ===== HERO (NỀN GAME) ===== */
-        .hero {
-            height: 100vh;
+            color: #fff;
             background:
-                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
-                url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1920&q=80");
-            background-size: cover;
-            background-position: center;
+              linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)),
+              url("images/game1.jpg") center/cover no-repeat fixed;
+        }
+
+        header {
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px;
         }
 
-        .hero h2 {
-            font-size: 52px;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
         }
 
-        .hero p {
+        header p {
             font-size: 18px;
             opacity: 0.9;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 35px;
-            background: #00ffff;
-            color: black;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: #00f2ff;
+            color: #000;
+            border-radius: 25px;
             text-decoration: none;
-            border-radius: 30px;
             font-weight: bold;
-            transition: 0.3s;
         }
 
-        .btn:hover {
-            transform: scale(1.1);
-            background: white;
+        section {
+            padding: 60px 10%;
+            background: rgba(0,0,0,0.75);
         }
 
-        /* ===== GAMES ===== */
-        .games {
-            padding: 90px 50px;
+        h2 {
             text-align: center;
-        }
-
-        .games h2 {
-            font-size: 36px;
             margin-bottom: 40px;
+            font-size: 32px;
         }
 
         .game-list {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .game-card {
-            background: #020617;
-            width: 260px;
-            border-radius: 16px;
+            background: #111;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0,255,255,0.2);
-            transition: 0.3s;
+            transition: transform 0.3s;
         }
 
         .game-card:hover {
-            transform: translateY(-12px);
+            transform: translateY(-10px);
         }
 
         .game-card img {
@@ -127,19 +83,20 @@
         }
 
         .game-card h3 {
-            margin: 15px 0 10px;
+            padding: 15px 15px 5px;
         }
 
         .game-card p {
-            font-size: 14px;
             padding: 0 15px 20px;
-            opacity: 0.8;
+            font-size: 14px;
+            opacity: 0.85;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background: black;
+            background: #000;
+            font-size: 14px;
             opacity: 0.7;
         }
     </style>
@@ -148,48 +105,39 @@
 <body>
 
 <header>
-    <h1>Luck08 Gaming</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#games">Games</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div>
+        <h1>WELCOME TO MY GAMING WORLD 🎮</h1>
+        <p>Nơi chia sẻ những tựa game mình yêu thích</p>
+        <a href="#games" class="btn">Explore</a>
+    </div>
 </header>
 
-<section class="hero">
-    <div>
-        <h2>WELCOME TO MY GAMING WORLD 🎮</h2>
-        <p>Nơi chia sẻ những tựa game yêu thích của mình</p>
-        <a class="btn" href="#games">Explore</a>
-    </div>
-</section>
-
-<section class="games" id="games">
+<section id="games">
     <h2>Favorite Games</h2>
 
     <div class="game-list">
         <div class="game-card">
-            <img src="https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&w=800&q=80">
+            <img src="images/game1.jpg" alt="Valorant">
             <h3>Valorant</h3>
-            <p>Game bắn súng chiến thuật 5v5 cực kỳ nổi tiếng</p>
+            <p>Game bắn súng chiến thuật 5v5 cực kỳ nổi tiếng.</p>
         </div>
 
         <div class="game-card">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80">
+            <img src="images/game1.jpg" alt="GTA V">
             <h3>GTA V</h3>
-            <p>Thế giới mở rộng lớn, tự do và hấp dẫn</p>
+            <p>Thế giới mở rộng lớn, tự do và hấp dẫn.</p>
         </div>
 
         <div class="game-card">
-            <img src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?auto=format&fit=crop&w=800&q=80">
+            <img src="images/game1.jpg" alt="League of Legends">
             <h3>League of Legends</h3>
-            <p>Game MOBA phổ biến nhất thế giới</p>
+            <p>MOBA huyền thoại với lượng người chơi khổng lồ.</p>
         </div>
     </div>
 </section>
 
 <footer>
-    © 2026 | Luck08 Gaming - GitHub Pages
+    © 2026 luck08-gif | My Gaming Website
 </footer>
 
 </body>
