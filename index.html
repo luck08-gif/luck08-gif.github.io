@@ -28,7 +28,7 @@
             align-items: center;
             padding: 20px 50px;
             background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(6px);
         }
 
         header h1 {
@@ -46,12 +46,12 @@
             color: #00ffff;
         }
 
-        /* ===== HERO ===== */
+        /* ===== HERO (NỀN GAME) ===== */
         .hero {
             height: 100vh;
-            background: 
+            background:
                 linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
-                url("https://wallpapercave.com/dwp2x/wp15406162.jpg");
+                url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1920&q=80");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -64,6 +64,7 @@
         .hero h2 {
             font-size: 52px;
             margin-bottom: 20px;
+            letter-spacing: 2px;
         }
 
         .hero p {
@@ -74,11 +75,11 @@
         .btn {
             display: inline-block;
             margin-top: 30px;
-            padding: 12px 30px;
+            padding: 12px 35px;
             background: #00ffff;
             color: black;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
         }
@@ -90,7 +91,7 @@
 
         /* ===== GAMES ===== */
         .games {
-            padding: 80px 50px;
+            padding: 90px 50px;
             text-align: center;
         }
 
@@ -109,14 +110,14 @@
         .game-card {
             background: #020617;
             width: 260px;
-            border-radius: 15px;
+            border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0,255,255,0.2);
             transition: 0.3s;
         }
 
         .game-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-12px);
         }
 
         .game-card img {
@@ -157,39 +158,11 @@
 
 <section class="hero">
     <div>
-        <h2>WELCOME TO LUCK08 GAMING 🎮</h2>
-        <p>Nơi chia sẻ những tựa game yêu thích</p>
+        <h2>WELCOME TO MY GAMING WORLD 🎮</h2>
+        <p>Nơi chia sẻ những tựa game yêu thích của mình</p>
         <a class="btn" href="#games">Explore</a>
     </div>
 </section>
 
 <section class="games" id="games">
     <h2>Favorite Games</h2>
-
-    <div class="game-list">
-        <div class="game-card">
-            <img src="https://wallpapercave.com/wp/wp9649786.jpg">
-            <h3>Valorant</h3>
-            <p>Game bắn súng chiến thuật 5v5 nổi tiếng</p>
-        </div>
-
-        <div class="game-card">
-            <img src="https://wallpapercave.com/wp/wp1809587.jpg">
-            <h3>GTA V</h3>
-            <p>Thế giới mở rộng lớn, tự do</p>
-        </div>
-
-        <div class="game-card">
-            <img src="https://wallpapercave.com/wp/wp4952592.jpg">
-            <h3>League of Legends</h3>
-            <p>Game MOBA phổ biến nhất thế giới</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2026 | Luck08 Gaming - GitHub Pages
-</footer>
-
-</body>
-</html>
